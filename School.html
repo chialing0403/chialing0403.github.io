@@ -4,6 +4,9 @@
 <link rel=stylesheet href="adjustment.css">
 <title>My School</title>
 <style>
+* {
+  box-sizing: border-box;
+}
 header {
   background-color: #C79CE7;
   padding: 30px;
@@ -14,7 +17,7 @@ header {
 nav {
   float: left;
   width: 25%;
-  height: 300px; /* only for demonstration, should be removed */
+  height: 350px; /* only for demonstration, should be removed */
   background:   #74C1E2;
   padding: 20px;
 }
@@ -25,9 +28,9 @@ nav {
 article {
   float: left;
   padding: 20px;
-  width: 68.5%;
+  width: 75%;
   background-color: pink;
-  height: 300px; /* only for demonstration, should be removed */
+  height: 350px; /* only for demonstration, should be removed */
 }
 
 /* Clear floats after the columns */
@@ -44,9 +47,9 @@ footer {
   text-align: center;
   color: white;
 }
-@media only screen and (max-width:600px) {
+@media only screen and (max-width:1100px) {
   /* For mobile phones: */
-  .header, .nav, .article, .section, .footer {
+  header, nav, article, section, footer {
     width:100%;
   }
 }
