@@ -22,9 +22,8 @@ color:#9f35ff;
 
 }
 .pics img{ position:absolute;
-   top: 20%;               /*從上面開始算，下推 50% (一半) 的位置*/
-    left: 6%;   
-    max-width: 100%;           /*從左邊開始算，右推 50% (一半) 的位置*/
+   top: 18%;             
+    left: 5%;        
   -webkit-transition: opacity 0.8s ease-in-out;
   -moz-transition: opacity 0.8s ease-in-out;
   -o-transition: opacity 0.8s ease-in-out;
@@ -54,13 +53,10 @@ color:#9f35ff;
 div {
 
   border: 3px solid #ff9224;
-   height:325px;
+   height:98%;
    position:relative;
 }
-div img { 
- width:70vh;
- height:18vw;
-} 
+
 p.ex1 {
 
   padding: 4px;
@@ -109,10 +105,15 @@ footer {
   text-align: center;
   color: white;
 }
-@media only screen and (max-width:1000px) {
+@media only screen and (max-width:1100px) {
   /* For mobile phones: */
-  header, nav, article, footer {
+  header, nav,  footer {
     width:100%;
+
+  }
+  article{
+    height:700px;
+     width:100%;
   }
 }
 </style>
@@ -148,8 +149,8 @@ footer {
        <h1>My Photos</h1>
     
   <div1 class="pics",id="pics">
-   
-     <img src="https://chialing0403.github.io/princess.jpg" >
+    
+     <img src="https://chialing0403.github.io/princess.jpg"  >
      <img src="https://chialing0403.github.io/princess1.jpg" >
   </div1>
 
