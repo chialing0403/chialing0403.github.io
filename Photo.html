@@ -22,8 +22,9 @@ color:#9f35ff;
 
 }
 .pics img{ position:absolute;
-  /* 淡出淡入效果2秒 */
-  left:350px;
+   top: 20%;               /*從上面開始算，下推 50% (一半) 的位置*/
+    left: 6%;   
+    max-width: 100%;           /*從左邊開始算，右推 50% (一半) 的位置*/
   -webkit-transition: opacity 0.8s ease-in-out;
   -moz-transition: opacity 0.8s ease-in-out;
   -o-transition: opacity 0.8s ease-in-out;
@@ -35,8 +36,9 @@ color:#9f35ff;
       opacity:0;
     }
  .pics1 img{ position:absolute;
-  /* 淡出淡入效果2秒 */
-  right:100px;
+    bottom:30px;
+    right:70px;
+
   -webkit-transition: opacity 0.8s ease-in-out;
   -moz-transition: opacity 0.8s ease-in-out;
   -o-transition: opacity 0.8s ease-in-out;
@@ -50,9 +52,15 @@ color:#9f35ff;
     }
 
 div {
+
   border: 3px solid #ff9224;
    height:325px;
+   position:relative;
 }
+div img { 
+ width:70vh;
+ height:18vw;
+} 
 p.ex1 {
 
   padding: 4px;
@@ -135,16 +143,17 @@ footer {
   </nav>
   
   <article>
-    <div> 
+   
+    <div id="div"> 
        <h1>My Photos</h1>
     
-  <div1 class="pics">
+  <div1 class="pics",id="pics">
    
      <img src="https://chialing0403.github.io/princess.jpg" >
      <img src="https://chialing0403.github.io/princess1.jpg" >
   </div1>
 
-  <div2 class="pics1"> 
+  <div2 class="pics1",id="pics1"> 
     <img src="https://chialing0403.github.io/photo1.jpg" >
    <img src="https://chialing0403.github.io/photo.jpg" >
      
