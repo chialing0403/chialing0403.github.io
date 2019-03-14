@@ -1,12 +1,39 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel=stylesheet href="adjustment.css">
 <title>About Me</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
 <style>
 * {
   box-sizing: border-box;
 }
+#nav  a { 
+text-decoration: none;
+display:block;/*設定為區塊*/
+
+}
+
+#nav  a.active, #nav a:hover {
+
+background: #ffffaa;/*滑鼠滑入處變色*/
+color:#9f35ff;
+
+}
+div {
+
+  padding: 68px;
+  border: 3px solid #ff9224;
+}
+p.ex1 {
+
+  padding: 4px;
+  direction:ltr; 
+  border: 2px solid #74C1E2; 
+  
+}
+
 header {
   background-color: #C79CE7;
   padding: 30px;
@@ -16,7 +43,7 @@ header {
 }
 nav {
   float: left;
-  width: 25%;
+  width: 20%;
   height: 350px; /* only for demonstration, should be removed */
   background:   #74C1E2;
   padding: 20px;
@@ -28,7 +55,7 @@ nav {
 article {
   float: left;
   padding: 20px;
-  width: 75%;
+  width: 80%;
   background-color: pink;
   height: 350px; /* only for demonstration, should be removed */
 }
@@ -47,33 +74,48 @@ footer {
   text-align: center;
   color: white;
 }
-@media only screen and (max-width:1100px) {
+@media only screen and (max-width:1000px) {
   /* For mobile phones: */
   header, nav, article, footer {
     width:100%;
   }
 }
 </style>
-</head>
+
 <header>
   <h2>Chia Ling</h2>
 </header>
 <body>
 <section>
   <nav>
-    <ul>
-      <li><a href="index.html">About Me</a></li>
-      <li><a href="School.html">My School</a></li>
-      <li><a href="Photo.html">My Photo</a></li>
-    </ul>
+  
+      
+  <ul id="nav">
+
+  <a href="index.html">
+  <p class="ex1">
+  <i class="material-icons" style="font-size:20px;color:#FFDB66;">favorite</i>About Me</p></a>
+
+  <a href="School.html">
+  <p class="ex1">
+  <i class="material-icons" style="font-size:20px;color:#FFDB66;">favorite</i>My School</p></a>
+
+  <a href="Photo.html">
+  <p class="ex1">
+  <i class="material-icons" style="font-size:20px;color:#FFDB66;">favorite</i>My Photo</p></a>
+      
+  </ul>
   </nav>
-</div>  
+
   <article>
+    <div>
    <h1>About me</h1>
     <p>1999/04/03</p>
     <p>Aries♈</p>
     <p>From Hsinchu</p>
+  </div>
     </article>
+
     </section>
   
 <footer>
