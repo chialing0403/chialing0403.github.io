@@ -21,13 +21,37 @@ background: #ffffaa;/*滑鼠滑入處變色*/
 color:#9f35ff;
 
 }
-#blur{
--webkit-filter:blur(3px);
-}
-div {
+.pics img{ position:absolute;
+  /* 淡出淡入效果2秒 */
+  left:350px;
+  -webkit-transition: opacity 0.8s ease-in-out;
+  -moz-transition: opacity 0.8s ease-in-out;
+  -o-transition: opacity 0.8s ease-in-out;
+  transition: opacity 0.8s ease-in-out;
+ 
+ }
+ .pics img:last-child:hover{
+     /* 滑入時第一張透明度設0 */
+      opacity:0;
+    }
+ .pics1 img{ position:absolute;
+  /* 淡出淡入效果2秒 */
+  right:100px;
+  -webkit-transition: opacity 0.8s ease-in-out;
+  -moz-transition: opacity 0.8s ease-in-out;
+  -o-transition: opacity 0.8s ease-in-out;
+  transition: opacity 0.8s ease-in-out;
+ 
+ }
+ .pics1 img:last-child:hover{
+     /* 滑入時第一張透明度設0 */
+    
+      opacity:0;
+    }
 
-  padding: 10px;
+div {
   border: 3px solid #ff9224;
+   height:325px;
 }
 p.ex1 {
 
@@ -111,15 +135,26 @@ footer {
   </nav>
   
   <article>
-     <div>
-    <h1>My Photooooooos</h1>
-    <img src="https://chialing0403.github.io/princess.jpg">
-    <img src="https://chialing0403.github.io/photo.jpg">
-    <img src="https://chialing0403.github.io/princess.jpg">
-      </div>
+    <div> 
+       <h1>My Photos</h1>
+    
+  <div1 class="pics">
+   
+     <img src="https://chialing0403.github.io/princess.jpg" >
+     <img src="https://chialing0403.github.io/princess1.jpg" >
+  </div1>
+
+  <div2 class="pics1"> 
+    <img src="https://chialing0403.github.io/photo1.jpg" >
+   <img src="https://chialing0403.github.io/photo.jpg" >
+     
+
+  </div2>
+
+   </div>
+
   </article>
 </section>
-
   
 <footer>
   <p>:))</p>

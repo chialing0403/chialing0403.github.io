@@ -14,6 +14,9 @@ text-decoration: none;
 display:block;/*設定為區塊*/
 
 }
+.pic{width:500px; height:350px;overflow:hidden;}
+.pic img{transform:scale(1,1);transition: all 1s ease-out;}
+.pic img:hover{transform:scale(1.2,1.2);}
 
 #nav  a.active, #nav a:hover {
 
@@ -23,8 +26,9 @@ color:#9f35ff;
 }
 div {
   
-  padding: 12px;
-  border: 3px solid #ff9224;
+  padding: 8px;
+  border:3px solid #ff9224;
+
 }
 p.ex1 {
 
@@ -108,15 +112,17 @@ footer {
   </nav>
   
   <article>
-
-     <div>
-      <p style="margin-left:8px;"></p>
+<div>
+   <div1 class="pic">
+    
+     
    <h1>My School</h1>
     <p>NTUST</p>
     <p>Information Management</p>
-    
+ <p style="margin-left:10px;"></p>
      <img src="https://chialing0403.github.io/school.jpg">
-    </div>
+    </div1>
+  </div>
   </article>
 </section>
 
